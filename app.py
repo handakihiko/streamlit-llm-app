@@ -74,7 +74,7 @@ def ask_expert(user_text: str, expert_role: str) -> str:
 # ==== Streamlit UI ====
 st.set_page_config(page_title="Lesson8 × LangChain × 専門家LLM", page_icon="🤖")
 
-st.title("Lesson8風 LLMアプリ（専門家選択付き）")
+st.title("LLMアプリ（専門家選択付き）")
 
 st.markdown("""
 ### アプリ概要
