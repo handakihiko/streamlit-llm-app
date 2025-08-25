@@ -43,10 +43,10 @@ def get_chain(role: str):
     llm = ChatOpenAI(
         model="gpt-5",
         api_key=OPENAI_API_KEY,
-        temperature=1,     # gpt-5は固定=1
-        max_tokens=512,
+        temperature=1,                 # gpt-5 は温度=1固定、明示してOK
+        max_completion_tokens=512,     # ← ここを修正
         timeout=30,
-    )
+)
 
     prompt = ChatPromptTemplate.from_messages([
         ("system", system_message),
